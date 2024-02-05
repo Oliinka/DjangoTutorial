@@ -17,6 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+##zde donahraju potrebne importy z ostatnich urls jednotlivych aplikaci
+from django.urls import include
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls), ##tohle to uz bylo, odkazuje na hlavni stranku
+    
+    ##pridam cesty k ostanim aplikacim, respeklive ostatnim strankam webu
+    path("polls/", include("polls.urls")),
 ]

@@ -31,6 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+##tady je potreba dopsat vsechny instalovane aplikace, podle tutorialu to byly vlastne jen nazvy aplikaci, 
+##tedy slozek - napsalo by se polls, nicmene tutorial to nacita jinak
+    'polls.apps.PollsConfig',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
