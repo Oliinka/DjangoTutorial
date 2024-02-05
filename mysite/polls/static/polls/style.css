@@ -1,0 +1,8 @@
+li a {
+    color: green;
+    text-shadow: 5px 5px 5px;
+}
+
+body {
+    background: white url("images/django-ide.jpg") no-repeat;
+}
