@@ -25,4 +25,5 @@ urlpatterns = [
     
     ##pridam cesty k ostanim aplikacim, respeklive ostatnim strankam webu
     path("polls/", include("polls.urls")),
+
 ]
